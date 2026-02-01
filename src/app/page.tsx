@@ -73,7 +73,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gray-100">
-      {/* 🔹 Navbar */}
+      
       <nav className="bg-blue-600 text-white px-6 py-4 flex justify-between items-center">
         <h1 className="text-xl font-bold">Mini E-Commerce</h1>
         <p>This is my E-Comerence Website</p>
@@ -85,7 +85,7 @@ export default function Home() {
       </nav>
 
       <div className="p-6">
-        {/* 🔹 Search */}
+        
         <input
           type="text"
           placeholder="Search products..."
@@ -94,14 +94,14 @@ export default function Home() {
           onChange={(e) => setSearch(e.target.value)}
         />
 
-        {/* 🔹 Feedback */}
+        
         {message && (
           <div className="mb-4 text-green-600 font-medium">
             {message}
           </div>
         )}
 
-        {/* 🔹 Products */}
+       
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
           {filteredProducts.map((p) => (
             <div
@@ -126,7 +126,7 @@ export default function Home() {
           ))}
         </div>
 
-        {/* 🔹 Cart Section */}
+        
         <div className="mt-12 bg-white rounded-xl shadow-md p-6">
           <div className="flex justify-between mb-4">
             <h2 className="text-2xl font-bold">Cart Summary</h2>
