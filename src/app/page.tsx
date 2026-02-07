@@ -75,10 +75,8 @@ export default function Home() {
     <div className="min-h-screen bg-gray-100">
       
       <nav className="bg-blue-600 text-white px-6 py-4 flex justify-between items-center">
-        <h1 className="text-xl font-bold">Mini E-Commerce</h1>
-        
+        <h1 className="text-xl font-bold">Mini E-Commerce</h1>        
         <p>Online shopping website</p>
-
         <span className="bg-white text-blue-600 px-3 py-1 rounded-full text-sm font-semibold">
           Cart: {cart.reduce((a, c) => a + c.qty, 0)}
         </span>
