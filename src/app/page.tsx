@@ -72,8 +72,7 @@ export default function Home() {
   );
 
   return (
-    <div className="min-h-screen bg-gray-100">
-      
+    <div className="min-h-screen bg-gray-100">      
       <nav className="bg-blue-600 text-white px-6 py-4 flex justify-between items-center">
         <h1 className="text-xl font-bold">Mini E-Commerce</h1>        
         <p>Online shopping website</p>
@@ -81,25 +80,19 @@ export default function Home() {
           Cart: {cart.reduce((a, c) => a + c.qty, 0)}
         </span>
       </nav>
-
-      <div className="p-6">
-        
+      <div className="p-6">        
         <input
           type="text"
           placeholder="Search products..."
           className="w-full mb-6 p-3 rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-400"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-        />
-
-        
+        />        
         {message && (
           <div className="mb-4 text-green-600 font-medium">
             {message}
           </div>
-        )}
-
-       
+        )}       
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
           {filteredProducts.map((p) => (
             <div
@@ -122,9 +115,7 @@ export default function Home() {
               </button>
             </div>
           ))}
-        </div>
-
-        
+        </div>        
         <div className="mt-12 bg-white rounded-xl shadow-md p-6">
           <div className="flex justify-between mb-4">
             <h2 className="text-2xl font-bold">Cart Summary</h2>
