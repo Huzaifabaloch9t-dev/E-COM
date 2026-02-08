@@ -26,7 +26,6 @@ export default function Home() {
       .then((res) => setProducts(res.data))
       .catch((err) => console.log(err));
   }, []);
-
   const addToCart = async (product: Product) => {
     const existing = cart.find((c) => c._id === product._id);
 
@@ -41,15 +40,12 @@ export default function Home() {
     } else {
       setCart([...cart, { ...product, qty: 1 }]);
     }
-
     setMessage("Item added to cart ✅");
     setTimeout(() => setMessage(""), 1500);
   };
-
   const removeFromCart = (id: string) => {
     setCart(cart.filter((c) => c._id !== id));
   };
-
   const changeQty = (id: string, delta: number) => {
     setCart(
       cart.map((c) =>
