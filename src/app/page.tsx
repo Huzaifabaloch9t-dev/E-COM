@@ -106,7 +106,6 @@ export default function Home() {
               <p className="text-sm text-gray-500 mt-2">
                 {p.description}
               </p>
-
               <button
                 onClick={() => addToCart(p)}
                 className="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition"
@@ -128,7 +127,6 @@ export default function Home() {
               </button>
             )}
           </div>
-
           {cart.length === 0 ? (
             <p className="text-gray-500">
               Your cart is empty 🛒
@@ -167,11 +165,9 @@ export default function Home() {
                   </div>
                 </div>
               ))}
-
               <div className="mt-4 text-right font-bold text-lg">
                 Total: Rs {total}
               </div>
-
               <button className="mt-4 w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition">
                 Checkout
               </button>
